@@ -153,8 +153,8 @@ def combine_audio_with_video(video_file, combined_audio):
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
-def main():
-    video_url = 'https://www.youtube.com/shorts/no6sA5iys5Q'
+def process_video():
+    video_url = 'https://youtu.be/RlN3La67D6s?si=5Jfp4jn0sX-JgPCs'
     target_language = 'hi-IN'  # Set your target language to Hindi
 
     video_file = download_video(video_url)
@@ -189,6 +189,3 @@ def main():
         print(f"PermissionError: {e}")
     except Exception as e:
         print(f"An unexpected error occurred during cleanup: {e}")
-
-if __name__ == '__main__':
-    main()
